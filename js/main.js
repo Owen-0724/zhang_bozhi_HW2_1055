@@ -26,6 +26,9 @@ function changeBGImage() {
 
 	// bug fix #2 should go here. it's at most 3 lines of JS code.
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
+	while (dropZones.firstChild) {
+		dropZones.removeChild(dropZones.firstChild);
+	}
 }
 
 function handleStartDrag() { 
