@@ -6,6 +6,8 @@
 // let theButton = document.querySelector("#buttonOne");
 
 // create a 1 to many connection with a variable -> querySelectorAll("queryString")
+
+
 let theButtons = document.querySelectorAll("#buttonHolder img"),
 	theHeading = document.querySelector("#headLine h1"),
 	puzzleBoard = document.querySelector(".puzzle-board"),
@@ -26,6 +28,13 @@ function changeBGImage() {
 
 	// bug fix #2 should go here. it's at most 3 lines of JS code.
 	puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
+	
+	dropZones.forEach(zone => {
+        while (zone.firstChild) {
+            zone.removeChild(zone.firstChild);
+        }
+    });
+
 }
 
 function handleStartDrag() { 
@@ -54,6 +63,8 @@ function handleDrop(e) {
 		
 	}
 }
+
+
 // step 2
 // event handling always goes at the bottom => 
 // how do we want users to interact with our app
