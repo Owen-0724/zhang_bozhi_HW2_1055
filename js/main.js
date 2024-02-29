@@ -53,7 +53,6 @@ function handleDrop(e) {
 	} else {
 		
 	}
-	console.log(this.childElementCount);
 }
 // step 2
 // event handling always goes at the bottom => 
