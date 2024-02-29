@@ -9,7 +9,7 @@ Solution:
 
 2. Attach an ID to each image, if there is an ID inside this drop zone then do not allow drop action.
 
-3. Check the amount of the elements inside the drop zone, if the number is larger than 0, then ignore the action.
+3. Check the amount of the elements inside the drop zone, if the number is larger than 0, then ignore the action.  
 |
 If child elements ＝0,
 then drop the piece.
@@ -17,7 +17,6 @@ then drop the piece.
 if (childElementCount ===0) {
 appendchild(dropPiece);
 } else {
-
 }
 
 Bug 2
